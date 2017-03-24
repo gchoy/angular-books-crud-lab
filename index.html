@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bookly</title>
+
+    <!-- STYLESHEETS -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="/styles/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- VENDOR SCRIPTS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="/scripts/app.js"></script>
+    <script src="/controllers/booksIndexController.js"></script>
+    <script src="/controllers/booksShowController.js"></script>
+
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome to Bookly</h1>
+        <p>Your book binder!</p>
+      </div>
+    </div>
+
+
+
+    <div ng-view></div>
+  </body>
+</html>
